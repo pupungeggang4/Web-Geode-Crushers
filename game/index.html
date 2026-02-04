@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geode Crushers</title>
+        <style>
+            @font-face {
+                font-family: 'neodgm';
+                src: url('asset/font/neodgm.ttf');
+            }
+
+            body {
+                touch-action: none;
+                overscroll-behavior: none;
+            }
+
+            #screen {
+                border: 2px solid black;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                max-width: 96%;
+                max-height: 96%;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id='screen' width='800' height='600'></canvas>
+        <script src='data/data.js'></script>
+        <script src='script/asset.js'></script>
+        <script src='script/shape.js'></script>
+
+        <script src='script/entity/entity.js'></script>
+        <script src='script/entity/player.js'></script>
+        <script src='script/entity/unit.js'></script>
+        <script src='script/entity/card.js'></script>
+
+        <script src='script/util.js'></script>
+        <script src='script/scenetitle.js'></script>
+        <script src='script/game.js'></script>
+        <script src='script/main.js'></script>
+    </body>
+</html>

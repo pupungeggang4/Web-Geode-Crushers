@@ -1,0 +1,19 @@
+{
+  "name": "geode-crushers",
+  "version": "1.0.0",
+  "description": "Web roguelite game which collects items to become stronger.",
+  "main": "game/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pupungeggang4/Web-Geode-Crushers.git"
+  },
+  "author": "pupungeggang4",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/pupungeggang4/Web-Geode-Crushers/issues"
+  },
+  "homepage": "https://github.com/pupungeggang4/Web-Geode-Crushers#readme"
+}
