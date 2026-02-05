@@ -6,6 +6,7 @@ let game
 
 function main() {
     game = new Game()
+    window.game = game
     game.run()
 }
 
