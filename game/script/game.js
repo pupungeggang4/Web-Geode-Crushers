@@ -6,8 +6,8 @@ class Game {
         this.state = ''
         this.menu = false
 
-        this.canvas.addEventListener('mousedown', (event) => this.mouseDown(event), false)
-        this.canvas.addEventListener('mouseup', (event) => this.mouseUp(event), false)
+        this.canvas.addEventListener('pointerdown', (event) => this.pointerDown(event), false)
+        this.canvas.addEventListener('pointerup', (event) => this.pointerUp(event), false)
         window.addEventListener('keydown', (event) => this.keyDown(event), false)
         window.addEventListener('keyup', (event) => this.keyUp(event), false)
     }
@@ -29,7 +29,7 @@ class Game {
         this.gameLoop = requestAnimationFrame(() => this.loop())
     }
 
-    mouseUp(event) {
+    pointerUp(event) {
         let targetRect = this.canvas.getBoundingClientRect()
         let pos = {
             x: (event.clientX - targetRect.left) / targetRect.width * this.canvas.width,
@@ -37,10 +37,10 @@ class Game {
         }
         let button = event.button
 
-        this.scene.mouseUp(this, pos, button)
+        this.scene.pointerUp(this, pos, button)
     }
 
-    mouseDown(event) {
+    pointerDown(event) {
         let targetRect = this.canvas.getBoundingClientRect()
         let pos = {
             x: (event.clientX - targetRect.left) / targetRect.width * this.canvas.width,
@@ -48,7 +48,7 @@ class Game {
         }
         let button = event.button
 
-        this.scene.mouseDown(this, pos, button)
+        this.scene.pointerDown(this, pos, button)
     }
 
     keyDown(event) {

@@ -14,11 +14,11 @@ class SceneTitle {
         Render.fillCanvas(canvas, ctx)
     }
 
-    mouseDown(game, pos, button) {
+    pointerDown(game, pos, button) {
 
     }
 
-    mouseUp(game, pos, button) {
+    pointerUp(game, pos, button) {
 
     }
 
