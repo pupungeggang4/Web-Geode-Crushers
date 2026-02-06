@@ -6,8 +6,8 @@ class Game {
         this.state = ''
         this.menu = false
 
-        this.canvas.addEventListener('pointerdown', (event) => this.pointerDown(event), false)
-        this.canvas.addEventListener('pointerup', (event) => this.pointerUp(event), false)
+        window.addEventListener('pointerdown', (event) => this.pointerDown(event), false)
+        window.addEventListener('pointerup', (event) => this.pointerUp(event), false)
         window.addEventListener('keydown', (event) => this.keyDown(event), false)
         window.addEventListener('keyup', (event) => this.keyUp(event), false)
     }
