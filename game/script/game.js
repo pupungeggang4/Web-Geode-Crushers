@@ -24,6 +24,7 @@ class Game {
     loop() {
         this.frameCurrent = performance.now()
         this.delta = this.frameCurrent - this.framePrevious
+        this.dt = this.delta / 1000
         this.framePrevious = this.frameCurrent
         this.scene.loop(this)
         this.gameLoop = requestAnimationFrame(() => this.loop())
